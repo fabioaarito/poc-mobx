@@ -1,0 +1,6 @@
+<ng-container *mobxAutorun>
+  <mat-list fxLayout="column">
+    {{changeDetections()}}
+    <app-mail-entry *ngFor="let mail of mailService.mails"></app-mail-entry>
+  </mat-list>
+</ng-container>
