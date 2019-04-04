@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {action, computed, observable} from 'mobx';
+// import {action, computed, observable} from 'mobx';
 
 enum Priority {
   // LOW = 1,
@@ -30,7 +30,7 @@ const DEFAULT_MAX = 10;
   providedIn: 'root',
 })
 export class MailService {
-  @observable
+  // @observable
   private _mailingList: Mail[] = [];
 
   constructor() {
@@ -40,7 +40,7 @@ export class MailService {
   /**
    * Getter for the mailing list
    */
-  @computed
+  // @computed
   public get mails() {
     console.count('updating mailing list');
     return this._mailingList;
@@ -49,7 +49,7 @@ export class MailService {
   /**
    * Update mailing list with random items
    */
-  @action
+  // @action
   public updateWithRandomItems(
     min: number = DEFAULT_MIN,
     max: number = DEFAULT_MAX,
