@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-mail-entry',
-  templateUrl: './mail-entry.component.html'
+  templateUrl: './mail-entry.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MailEntryComponent {
-}
+export class MailEntryComponent {}

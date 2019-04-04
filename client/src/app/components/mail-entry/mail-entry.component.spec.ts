@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MailEntryComponent } from './mail-entry.component';
+import {MailEntryComponent} from './mail-entry.component';
 
 describe('MailEntryComponent', () => {
   let component: MailEntryComponent;
@@ -8,9 +8,8 @@ describe('MailEntryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MailEntryComponent ]
-    })
-    .compileComponents();
+      declarations: [MailEntryComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
