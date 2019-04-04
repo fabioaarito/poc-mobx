@@ -6,7 +6,7 @@ import { MailService } from '../../services/mail.service';
   selector: 'app-mail-generator',
   templateUrl: './mail-generator.component.html',
   styleUrls: ['./mail-generator.component.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MailGeneratorComponent {
   public mailGeneratorForm = new FormGroup({
@@ -14,10 +14,10 @@ export class MailGeneratorComponent {
     max: new FormControl(100),
   });
 
-  constructor(public mailService: MailService) {}
+  constructor(public _mailService: MailService) {}
 
   public generateRandomMails() {
-    this.mailService.updateWithRandomItems(
+    this._mailService.updateWithRandomItems(
       this.mailGeneratorForm.value.min,
       this.mailGeneratorForm.value.max,
     );

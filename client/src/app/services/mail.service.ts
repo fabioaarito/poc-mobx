@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-// import {action, computed, observable} from 'mobx';
+import {action, computed, observable} from 'mobx';
 
 enum Priority {
   // LOW = 1,
@@ -24,7 +24,7 @@ interface Mail {
 }
 
 const DEFAULT_MIN = 1;
-const DEFAULT_MAX = 10;
+const DEFAULT_MAX = 100;
 
 @Injectable({
   providedIn: 'root',
@@ -42,7 +42,7 @@ export class MailService {
    */
   // @computed
   public get mails() {
-    console.count('updating mailing list');
+    // console.count('getting mailing list');
     return this._mailingList;
   }
 

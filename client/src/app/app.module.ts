@@ -9,6 +9,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MobxAngularModule} from 'mobx-angular';
 import {MailsManagerComponent} from './components/mails-manager/mails-manager.component';
 import {MailGeneratorComponent} from './components/mail-generator/mail-generator.component';
+import { MailsCounterComponent } from './components/mails-counter/mails-counter.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {MailGeneratorComponent} from './components/mail-generator/mail-generator
     MailEntryComponent,
     MailsManagerComponent,
     MailGeneratorComponent,
+    MailsCounterComponent,
   ],
   imports: [
     BrowserModule,
