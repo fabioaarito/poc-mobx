@@ -1,19 +1,19 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {MailsManagerComponent} from './mails-manager.component';
+import {MailGeneratorComponent} from './mail-generator.component';
 
-describe('MailsManagerComponent', () => {
-  let component: MailsManagerComponent;
-  let fixture: ComponentFixture<MailsManagerComponent>;
+describe('MailGeneratorComponent', () => {
+  let component: MailGeneratorComponent;
+  let fixture: ComponentFixture<MailGeneratorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [MailsManagerComponent],
+      declarations: [MailGeneratorComponent],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MailsManagerComponent);
+    fixture = TestBed.createComponent(MailGeneratorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

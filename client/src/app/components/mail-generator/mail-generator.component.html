@@ -1,0 +1,21 @@
+<div class="mail-generator-form" fxLayout="row" fxFlexAlign="space-between center">
+  <div>
+    <form fxLayout="row" fxFlexAlign="start start" class="" [formGroup]="mailGeneratorForm">
+        <mat-form-field class="form-field">
+          <input matInput type="number" placeholder="Min mails" formControlName="min">
+        </mat-form-field>
+        <mat-form-field class="form-field">
+          <input matInput type="number" placeholder="Max mails" formControlName="max">
+        </mat-form-field>
+        <button mat-button
+                type="button"
+                (click)="generateRandomMails($event)">New Random Mails</button>
+    </form>
+  </div>
+  <div>
+    <h3 [matBadge]="mailService.mails.length" matBadgeOverlap="false" class="mails-counter">
+      Emails
+    </h3>
+  </div>
+</div>
+<mat-divider></mat-divider>

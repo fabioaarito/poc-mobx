@@ -1,6 +1,9 @@
 <ng-container>
-  <app-toolbar></app-toolbar>
+  <mat-toolbar color="primary" *mobxAutorun>
+    <span>PocMobx Demo Application</span>
+  </mat-toolbar>
   <div class="container">
+    <app-mail-generator></app-mail-generator>
     <app-mails-manager></app-mails-manager>
   </div>
 </ng-container>
