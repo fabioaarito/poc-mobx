@@ -6,7 +6,7 @@ import { MailService } from '../../services/mail.service';
   selector: 'app-mail-generator',
   templateUrl: './mail-generator.component.html',
   styleUrls: ['./mail-generator.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MailGeneratorComponent {
   public mailGeneratorForm = new FormGroup({

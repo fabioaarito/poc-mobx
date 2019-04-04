@@ -10,6 +10,6 @@ export class MailsManagerComponent {
   constructor(public mailService: MailService) {}
 
   public changeDetections() {
-    // console.log('detect changes');
+    console.log('detect changes');
   }
 }

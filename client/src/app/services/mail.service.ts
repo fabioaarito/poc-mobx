@@ -42,7 +42,7 @@ export class MailService {
    */
   // @computed
   public get mails() {
-    // console.count('getting mailing list');
+    console.count('getting mailing list');
     return this._mailingList;
   }
 
